@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+            android:id="@+id/tvResposta"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" tools:layout_editor_absoluteY="27dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvResposta"
+            android:hint="Latitude"
+            android:ems="10"
+            android:id="@+id/etLatitude"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLatitude"
+            android:hint="Longitude"
+            android:ems="10"
+            android:id="@+id/etLongitude"/>
+    <Button
+            android:text="localizacao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLocalizacaoMudou"/>
+</android.support.constraint.ConstraintLayout>
