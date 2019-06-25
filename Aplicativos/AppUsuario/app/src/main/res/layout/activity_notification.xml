@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/fundo051"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:elevation="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:alpha="0.9"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            tools:layout_editor_absoluteY="56dp"
+            tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="Selecione o local que você deseja ir"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@color/blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textAlignment="center"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:id="@+id/etDestinoFinal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:hint="Local do destino"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+            android:text="iniciar rota"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="70dp"
+            android:id="@+id/buttonIniciaRota"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/card2"
+            android:layout_marginBottom="109dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.2"/>
+</android.support.constraint.ConstraintLayout>
